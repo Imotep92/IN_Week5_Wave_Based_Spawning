@@ -108,8 +108,8 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 0.6140089
+  m_Center: {x: 0.013133049, y: 0, z: 0}
 --- !u!54 &3565997701290574421
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -151,3 +151,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   focalPoint: {fileID: 0}
+  hasPowerup: 0
+  powerupIndicator: {fileID: 312369865151676172, guid: bd6234000f4f14f09b448b929e486f71, type: 3}
