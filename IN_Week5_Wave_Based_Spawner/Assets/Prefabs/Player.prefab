@@ -118,9 +118,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4901841945422436020}
   serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 1.3
-  m_AngularDrag: 0.05
+  m_Mass: 1.63
+  m_Drag: 1.57
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -152,4 +152,4 @@ MonoBehaviour:
   speed: 10
   focalPoint: {fileID: 0}
   hasPowerup: 0
-  powerupIndicator: {fileID: 312369865151676172, guid: bd6234000f4f14f09b448b929e486f71, type: 3}
+  powerupIndicator: {fileID: 0}

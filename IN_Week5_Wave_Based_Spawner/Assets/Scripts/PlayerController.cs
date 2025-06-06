@@ -1,6 +1,9 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -15,6 +18,12 @@ public class PlayerController : MonoBehaviour
 
     public GameObject powerupIndicator;
 
+    public GameObject game_Over_Panel;
+
+    private Vector3 startPosition;
+
+    public int lives = 3;
+
     //playerRespawn and player lower boundary y axis
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -22,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal_Point");
+        lives = 3;
     }
 
     // Update is called once per frame
@@ -38,6 +48,20 @@ public class PlayerController : MonoBehaviour
 
         powerupIndicator.SetActive(hasPowerup);
         powerupIndicator.transform.position = transform.position + new Vector3(0, 0.6f, 0);
+        powerupIndicator.transform.Rotate(Vector3.up * Time.deltaTime);
+
+       if (transform.position.y < -3)
+        {
+            transform.position = startPosition;
+            playerRb.linearVelocity = Vector3.zero;
+            lives--;
+        }
+
+        if (lives <= 0)
+        {
+            SceneManager.LoadScene(0); //bring up main menu (will bring up game over in future)
+        } 
+        
 
     }
 

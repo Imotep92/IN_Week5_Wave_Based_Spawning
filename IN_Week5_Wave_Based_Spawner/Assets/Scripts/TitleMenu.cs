@@ -1,9 +1,16 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
+using TMPro;
 
 public class TitleMenu : MonoBehaviour
 {
+
+    public GameObject game_Over_Panel;
+    public bool GameIsOver = false;
+
+
+
     public void SwitchScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
@@ -12,6 +19,11 @@ public class TitleMenu : MonoBehaviour
     }
 
     void Update()
+    {
+
+    }
+
+    void GameOver()
     {
         
     }
