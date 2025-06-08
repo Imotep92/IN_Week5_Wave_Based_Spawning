@@ -7,7 +7,10 @@ public class TitleMenu : MonoBehaviour
 {
 
     public GameObject game_Over_Panel;
+    public GameObject pause_Panel;
     public bool GameIsOver = false;
+
+    public bool GameIsPaused = false;
 
 
 
@@ -24,6 +27,23 @@ public class TitleMenu : MonoBehaviour
     }
 
     void GameOver()
+    {
+
+    }
+
+    void Pause()
+    {
+        if (!GameIsPaused)
+        {
+            pause_Panel.SetActive(true);
+            Time.timeScale = 0f;
+            GameIsPaused = true;
+        }
+        
+
+    }
+    
+    void Resume()
     {
         
     }

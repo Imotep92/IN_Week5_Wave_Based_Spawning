@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - PowerUp
+  - ForceField
+  - Rocket
   layers:
   - Default
   - TransparentFX

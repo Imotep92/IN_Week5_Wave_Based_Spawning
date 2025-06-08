@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4107324649003337501}
   - component: {fileID: 3996894126937095919}
   m_Layer: 0
-  m_Name: Enemy_2
+  m_Name: Enemy_Brute
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.7856493, y: 0.9199847, z: -0.55010074}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -67,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3620aafac492a48018d485baf09f1c3f, type: 2}
+  - {fileID: 2100000, guid: d785dec3facff46ab94f88a2f02ea7fb, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -96,7 +96,7 @@ SphereCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8003270844932994507}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 4e47a6d3129f84bce84f8c4228b4c8da, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -135,7 +135,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 4
+  m_Constraints: 0
   m_CollisionDetection: 3
 --- !u!114 &3996894126937095919
 MonoBehaviour:
